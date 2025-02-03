@@ -1,6 +1,8 @@
-FROM nonebot/nb-cli:latest-py3.11
+FROM Python3.11
 
 WORKDIR /app
+
+RUN pip install nb-cli
 
 RUN nb self install nb-cli-plugin-webui
 
